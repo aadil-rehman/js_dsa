@@ -1,3 +1,9 @@
+// *
+// **
+// ***
+// ****
+// *****
+
 function pyramidPattern(n) {
 	for (let i = 0; i < n; i++) {
 		let row = "";
@@ -7,6 +13,12 @@ function pyramidPattern(n) {
 		console.log(row);
 	}
 }
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
 
 function numberPattern(n) {
 	for (let i = 0; i <= n; i++) {
@@ -18,6 +30,12 @@ function numberPattern(n) {
 	}
 }
 
+//      *
+//     **
+//    ***
+//   ****
+//  *****
+// ******
 function reversePyramid(n) {
 	for (let i = 0; i < n; i++) {
 		let row = "";
@@ -31,4 +49,27 @@ function reversePyramid(n) {
 	}
 }
 
-reversePyramid(10);
+// 1
+// 10
+// 101
+// 1010
+// 10101
+// 101010
+
+function binaryPatter(n) {
+	for (let i = 0; i <= n; i++) {
+		let row = "";
+		let toggle = 1;
+		for (let j = 1; j < i + 1; j++) {
+			row = row + toggle;
+			if (toggle === 1) {
+				toggle = 0;
+			} else {
+				toggle = 1;
+			}
+		}
+		console.log(row);
+	}
+}
+
+binaryPatter(2);
